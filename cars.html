@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cars - DriveEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h2>🚘 DriveEase</h2>
+    </div>
+
+    <div class="nav-right">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="cars.html" class="nav-link active">Cars</a>
+        <a href="history.html" class="nav-link">History</a>
+    </div>
+</nav>
+
+<!-- FILTER + SORT -->
+<div class="top-bar">
+    <select id="filter">
+        <option value="all">All Cars</option>
+        <option value="available">Available Only</option>
+    </select>
+
+    <select id="sort">
+        <option value="default">Sort</option>
+        <option value="low">Price Low → High</option>
+        <option value="high">Price High → Low</option>
+    </select>
+</div>
+
+<!-- LOADER -->
+<div id="loader" class="loader">
+    <h3>Loading cars...</h3>
+</div>
+
+<!-- EMPTY STATE -->
+<div id="empty" class="empty">
+    <h2>No Cars Available</h2>
+</div>
+
+<!-- CAR LIST -->
+<div class="container" id="carList"></div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Rent Car</h3>
+
+        <input id="modalName" placeholder="Your Name">
+        <input id="modalDays" type="number" placeholder="Days">
+
+        <button onclick="confirmRent()">Confirm Booking</button>
+        <button onclick="closeModal()" style="margin-top:10px; background:red;">Cancel</button>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast"></div>
+
+<!-- SCRIPTS -->
+<script src="js/api.js"></script>
+<script src="js/cars.js"></script>
+
+</body>
+</html>

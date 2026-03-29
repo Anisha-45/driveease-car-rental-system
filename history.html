@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental History</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h2>🚘 DriveEase</h2>
+    </div>
+
+    <div class="nav-right">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="cars.html" class="nav-link active">Cars</a>
+        <a href="history.html" class="nav-link">History</a>
+    </div>
+</nav>
+
+<h2 style="text-align:center; margin-top:20px;">Rental History</h2>
+
+<!-- LOADER -->
+<div id="loader" style="text-align:center; display:none;">
+    <h3>Loading...</h3>
+</div>
+
+<!-- EMPTY -->
+<div id="empty" style="text-align:center; display:none;">
+    <h3>No History Found</h3>
+</div>
+
+<!-- TABLE -->
+<table border="1" style="margin:20px auto; width:80%; text-align:center;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Car ID</th>
+            <th>Days</th>
+        </tr>
+    </thead>
+    <tbody id="historyTable"></tbody>
+</table>
+
+<script src="js/history.js"></script>
+
+</body>
+</html>

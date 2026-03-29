@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DriveEase - Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h2>🚘 DriveEase</h2>
+    </div>
+
+    <div class="nav-right">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="cars.html" class="nav-link active">Cars</a>
+        <a href="history.html" class="nav-link">History</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Find Your Perfect Ride</h1>
+    <p>Rent cars easily and quickly</p>
+
+    <div class="search-box">
+        <input id="name" placeholder="Your Name">
+        <input id="days" type="number" placeholder="Days">
+
+        <button onclick="goToCars()">Search Cars</button>
+    </div>
+</section>
+
+<script>
+function goToCars() {
+    const name = document.getElementById("name").value;
+    const days = document.getElementById("days").value;
+
+    if (!name || !days) {
+        alert("Please enter all details");
+        return;
+    }
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("days", days);
+
+    window.location.href = "cars.html";
+}
+</script>
+
+</body>
+</html>
