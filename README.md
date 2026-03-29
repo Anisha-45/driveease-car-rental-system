@@ -1,38 +1,61 @@
-🚗 DriveEase – Car Rental System
-📌 Project Overview
+# 🚗 DriveEase – Car Rental System
 
-DriveEase is a full-stack Car Rental System that allows users to browse available cars, rent vehicles, return them, and view rental history.
+## 📌 Overview
 
-This project is designed with a user-friendly interface and a Spring Boot backend, simulating a real-world car rental platform.
+**DriveEase** is a full-stack Car Rental System that allows users to browse cars, rent vehicles, return them, and track rental history.
+It simulates a real-world rental platform with a clean UI and backend integration.
 
-🚀 Features
-👤 User Features
-🔍 View all available cars
-🚗 Rent a car (enter name & number of days)
-🔁 Return rented cars
-📊 View rental history
-🎨 Modern UI with images and animations
-🔎 Filter & Sort cars
-🔔 Toast notifications & loader
-🧠 Smart Features
-Real-time availability update
-Prevents renting already rented cars
-Stores rental history
-Local storage for user details
-🛠️ Tech Stack
-💻 Frontend
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-⚙️ Backend
-Java
-Spring Boot
-Spring Data JPA
-🗄️ Database
-H2 / MySQL (depending on your setup)
+---
 
+## 🌐 Live Demo
 
-📁 Project Structure
+🔗 https://anisha-45.github.io/driveease-car-rental-system/
+
+---
+
+## 🚀 Features
+
+### 👤 User Features
+
+* 🔍 View all available cars
+* 🚗 Rent a car (enter name & duration)
+* 🔁 Return rented cars
+* 📊 View rental history
+* 🎨 Modern UI with animations
+* 🔎 Filter & sort cars
+
+### 🧠 Smart Features
+
+* ⚡ Real-time availability updates
+* 🚫 Prevents double booking
+* 🗂️ Rental history tracking
+* 💾 Local storage support
+
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Frontend
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+
+### ⚙️ Backend
+
+* Java
+* Spring Boot
+* Spring Data JPA
+
+### 🗄️ Database
+
+* H2 / MySQL
+
+---
+
+## 📁 Project Structure
+
+```
 CarRentalSystem/
 │
 ├── backend/
@@ -47,48 +70,68 @@ CarRentalSystem/
 │   ├── history.html
 │   ├── css/
 │   ├── js/
+```
 
+---
 
-🔌 API Endpoints
-Method	Endpoint	Description
-GET	/cars	Get all cars
-POST	/cars/rent	Rent a car
-POST	/cars/return/{id}	Return car
-GET	/cars/history	Rental history
+## 🔌 API Endpoints
 
-⚙️ How to Run the Project
-🔹 Backend Setup
-Open project in IntelliJ / Eclipse
-Run:
-CarRentalSystemApplication.java
-Server starts at:
-http://127.0.0.1:8080
-🔹 Frontend Setup
-Open frontend folder in VS Code
-Run using Live Server
-Open:
-http://127.0.0.1:5500/index.html
+| Method | Endpoint          | Description    |
+| ------ | ----------------- | -------------- |
+| GET    | /cars             | Get all cars   |
+| POST   | /cars/rent        | Rent a car     |
+| POST   | /cars/return/{id} | Return car     |
+| GET    | /cars/history     | Rental history |
 
-💡 Future Enhancements
-🔐 User authentication (Login/Signup)
-💳 Online payment integration
-📍 Location-based search
-📱 Mobile responsive improvements
-📊 Admin dashboard
-🧾 Booking details with date/time
+---
 
-🎯 Learning Outcomes
-Full-stack development (Frontend + Backend)
-REST API integration
-UI/UX design principles
-Real-world project architecture
+## ⚙️ How to Run
 
-👩‍💻 Author
+### 🔹 Backend
 
-Anisha Kumari
+1. Open project in IntelliJ / Eclipse
+2. Run: `CarRentalSystemApplication.java`
+3. Server starts at:
+   👉 http://127.0.0.1:8080
+
+---
+
+### 🔹 Frontend
+
+1. Open frontend folder in VS Code
+2. Run using Live Server
+3. Open:
+   👉 http://127.0.0.1:5500/index.html
+
+---
+
+## 💡 Future Improvements
+
+* 🔐 Authentication (Login/Signup)
+* 💳 Payment integration
+* 📍 Location-based search
+* 📱 Mobile responsiveness
+* 📊 Admin dashboard
+
+---
+
+## 🎯 Learning Outcomes
+
+* Full-stack development
+* REST API integration
+* UI/UX design
+* Real-world project structure
+
+---
+
+## 👩‍💻 Author
+
+**Anisha Kumari**
 B.Tech CSE (AI & ML)
 Lovely Professional University
 
-⭐ Conclusion
+---
 
-DriveEase demonstrates a complete working car rental system with modern UI and real-time backend integration, making it a strong portfolio project for internships and placements.
+## ⭐ Conclusion
+
+DriveEase is a complete car rental system combining modern UI and backend integration, making it a strong portfolio project for internships and placements.
